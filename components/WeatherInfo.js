@@ -12,6 +12,7 @@ export default function WeatherInfo({currentWeather}) {
     name,
   } = currentWeather
   const {icon, main, description} = details
+  console.log(icon);
   // @4x means the size of the icon we call from the openweathermap page
   const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`
   // In order to see the image we must apply some styles
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
   textSecondary: {
     fontSize: 20,
     color: SECONDARY_COLOR,
-    fontWeight: 500,
+    fontWeight: "500",
     marginTop: 10
   }
 })
